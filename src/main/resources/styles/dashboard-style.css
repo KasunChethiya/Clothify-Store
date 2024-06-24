@@ -1,0 +1,94 @@
+.button {
+    -fx-background-color: #05071F;
+    -fx-text-fill: #e7e5e5;
+}
+
+.button:hover {
+    -fx-background-color: #10165F;
+}
+
+.button:pressed {
+    -fx-background-color: #1620A1;
+}
+
+.scroll-pane {
+    -fx-background-color: #02030A;
+}
+
+.scroll-bar:horizontal,
+.scroll-bar:vertical {
+    -fx-background-color: transparent;
+}
+
+.increment-button,
+.decrement-button {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+}
+
+.scroll-bar:horizontal .track,
+.scroll-bar:vertical .track {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-background-radius: 0em;
+}
+
+.scroll-bar:horizontal .thumb,
+.scroll-bar:vertical .thumb {
+    -fx-background-color: #10165F;
+    -fx-background-radius: 5em;
+}
+
+.scroll-pane>.corner {
+    -fx-background-color: black;
+}
+
+.menu .label
+{
+    -fx-text-fill: #EA7C69;
+    -fx-font-weight: bold;
+    -fx-font-family: 'Barlow';
+}
+
+.scroll-pane > .viewport {
+   -fx-background-color: transparent;
+}
+
+.scroll-pane {
+   -fx-background-color: transparent;
+}
+
+.scroll-bar:vertical {
+    -fx-background-color: transparent;
+}
+
+
+
+
+/* Define a style for TextField */
+.text-field {
+    -fx-padding: 5px;
+    -fx-background-color: #2D303E;
+}
+
+/* Define a style for ComboBox */
+.combo-box {
+    -fx-padding: 5px; /* Padding inside the combo box */
+}
+
+/* Define a style for TextArea */
+.text-area {
+    -fx-padding: 5px; /* Padding inside the text area */
+}
+
+
+.text-field,
+.combo-box,
+.text-area {
+    -fx-background-color: #2D303E; /* Inherit the background color from the form-control class */
+    -fx-border-color: #393C49; /* Inherit the border color from the form-control class */
+    -fx-border-width: 2px; /* Inherit the border width from the form-control class */
+    -fx-border-radius: 8px; /* Inherit the border radius from the form-control class */
+    -fx-background-radius: 8px;
+    -fx-text-fill: white;
+}

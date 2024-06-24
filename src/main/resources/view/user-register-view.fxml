@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1080.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.icet.controller.user.UserRegisterViewController">
+    <center>
+        <VBox alignment="CENTER" spacing="20.0" BorderPane.alignment="CENTER">
+            <children>
+                <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../img/logo.png" />
+                    </image>
+                </ImageView>
+                <Text text="Enter your details to create an account" />
+                <GridPane alignment="CENTER" hgap="10.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="281.0" prefWidth="1080.0" vgap="10.0">
+                    <columnConstraints>
+                        <ColumnConstraints hgrow="ALWAYS" maxWidth="679.0" minWidth="21.0" prefWidth="535.0" />
+                  <ColumnConstraints hgrow="ALWAYS" maxWidth="1049.0" minWidth="10.0" prefWidth="535.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints vgrow="ALWAYS" />
+                        <RowConstraints vgrow="ALWAYS" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="ALWAYS" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="ALWAYS" />
+                    </rowConstraints>
+                    <children>
+                        <TextField fx:id="firstNameTxtField" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="40.0" prefWidth="400.0" promptText="First Name" style="-fx-background-radius: 8;" stylesheets="@../styles/style.css" GridPane.columnIndex="0" GridPane.halignment="RIGHT" GridPane.rowIndex="0">
+                            <font>
+                                <Font size="16.0" />
+                            </font>
+                            <GridPane.margin>
+                                <Insets right="10.0" />
+                            </GridPane.margin>
+                        </TextField>
+                        <PasswordField fx:id="passwordTxtField" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="40.0" prefWidth="400.0" promptText="Password" style="-fx-background-radius: 8;" stylesheets="@../styles/style.css" GridPane.halignment="RIGHT" GridPane.rowIndex="3">
+                            <font>
+                                <Font size="16.0" />
+                            </font>
+                            <GridPane.margin>
+                                <Insets right="10.0" />
+                            </GridPane.margin>
+                        </PasswordField>
+                  <TextField fx:id="lastNameTxtField" cache="true" layoutX="77.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="40.0" prefWidth="400.0" promptText="Last Name" style="-fx-background-radius: 8;" stylesheets="@../styles/style.css" GridPane.columnIndex="1" GridPane.halignment="LEFT">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets left="10.0" />
+                     </GridPane.margin>
+                  </TextField>
+                  <TextField fx:id="phoneNoTxtField" layoutX="554.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="40.0" prefWidth="400.0" promptText="Phone Number (+9476XXXXXXX)" style="-fx-background-radius: 8;" stylesheets="@../styles/style.css" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="1">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets left="10.0" />
+                     </GridPane.margin>
+                  </TextField>
+                  <TextField fx:id="addressTxtField" layoutX="554.0" layoutY="60.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="40.0" prefWidth="400.0" promptText="Address" style="-fx-background-radius: 8;" stylesheets="@../styles/style.css" GridPane.halignment="RIGHT" GridPane.rowIndex="1">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets right="10.0" />
+                     </GridPane.margin>
+                  </TextField>
+                  <TextField fx:id="emailTxtField" layoutX="554.0" layoutY="60.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="40.0" prefWidth="400.0" promptText="Email" style="-fx-background-radius: 8;" stylesheets="@../styles/style.css" GridPane.halignment="RIGHT" GridPane.rowIndex="2">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets right="10.0" />
+                     </GridPane.margin>
+                  </TextField>
+                  <PasswordField fx:id="reEnterPasswordTxtField" layoutX="77.0" layoutY="203.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="40.0" prefWidth="400.0" promptText="Re enter the password" style="-fx-background-radius: 8;" stylesheets="@../styles/style.css" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="3">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets left="10.0" />
+                     </GridPane.margin>
+                  </PasswordField>
+                  <JFXComboBox fx:id="roleComboBox" focusColor="#415aa600" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="40.0" prefWidth="400.0" promptText="Role" style="-fx-background-radius: 8;" stylesheets="@../styles/style.css" unFocusColor="#4d4d4d00" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                     <GridPane.margin>
+                        <Insets left="10.0" />
+                     </GridPane.margin>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </JFXComboBox>
+                    </children>
+                </GridPane>
+                  <JFXButton maxHeight="-Infinity" maxWidth="-Infinity" onAction="#SignUpBtnOnAction" prefHeight="40.0" prefWidth="400.0" style="-fx-background-color: #1976D2; -fx-background-radius: 8;" text="Create Account" textFill="WHITE">
+                      <font>
+                          <Font name="System Bold" size="16.0" />
+                      </font>
+                  </JFXButton>
+            <Hyperlink onAction="#LogInLinkOnAction" text="Login" />
+            </children>
+        </VBox>
+    </center>
+</BorderPane>
